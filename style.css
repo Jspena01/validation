@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    height :100vh;
+    overflow: hidden;
+    background: url("bg.png");
+}
+.Main{
+    position: relative;
+    top:calc(50% - 300px);
+    left:calc(50% - 300px);
+    height: 600px;
+    width: 600px;
+}
+.Main_Form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(89, 90, 90, 0.535);
+    justify-content: center;
+}
+.Main_Form--Title{
+   margin:20px; 
+   font-size: 3em;
+   color: rgb(255, 255, 255);
+}
+.Main_Form input{
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    border: 0;
+    border-bottom: 2px solid black;
+}
+.Main_Form input:focus, .Main_Form input:hover{
+    outline: 0px;
+    background: rgba(247, 244, 244, 0.809);
+    color: #000;
+}
+#enviar{
+    background: rgba(3, 252, 86, 0.878);
+    color: #000;
+
+}
+#enviar:active, #enviar:hover{
+    background: rgba(5, 189, 67, 0.878);
+    color: #000;
+}
+.Main_Form input::placeholder:focus{
+    color: #000;
+    font-size: .8em;
+}
+#error{
+    height: 1em;
+    font-size: 1.5em;
+    color: #f00;
+}
