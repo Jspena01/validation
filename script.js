@@ -3,7 +3,7 @@ const nombre = document.getElementById("nombre");
 const materias = document.getElementById("materias"); 
 const email = document.getElementById("email")
 const error = document.getElementById("error");
-
+const main = document.querySelector(".Main");
 validarInfo = () =>{
  if(nombre.value == "" || nombre.value != "" && !(nombre.value.length >= 5)){
      error.textContent = " Ingrese su nombre";
@@ -36,7 +36,6 @@ validarInfo = () =>{
  }
 
 }
-
 
 enviar.addEventListener("click",(e)=>{
     e.preventDefault();
